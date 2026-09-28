@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="static/calculator.css">
+</head>
+
+<body>
+    
+
+    <div class="blank">
+        <h1 id="j">CALCULATOR</h1>
+        <div id="dream">
+            <input id="g">
+        </div>
+        <div class="empty" id="start">
+            <button type="submit" id="allclear">Ac</button>
+            <button type="submit">%</button>
+            <button type="submit" id="clear">x</button>
+            <button type="submit">/</button>
+        </div>
+
+        <div class="empty" id="lnum">
+            <button type="submit">7</button>
+            <button type="submit">8</button>
+            <button type="submit">9</button>
+            <button type="submit">*</button>
+        </div>
+        <div class="empty" id="Mnum">
+            <button type="submit">4</button>
+            <button type="submit">5</button>
+            <button type="submit">6</button>
+            <button type="submit">-</button>
+        </div>
+        <div class="empty" id="fnum">
+            <button type="submit">1</button>
+            <button type="submit">2</button>
+            <button type="submit">3</button>
+            <button type="submit">+</button>
+        </div>
+        <div class="empty" id="buttons">
+            <button type="submit">00</button>
+            <button type="submit">0</button>
+            <button type="submit">.</button>
+            <button type="submit" id="equal">=</button>
+        </div>
+    </div>
+</body>
+{% load static %}
+<script src="{% static 'major.js' %}"></script>
+</html>

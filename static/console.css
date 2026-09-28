@@ -1,0 +1,14 @@
+#start{
+    display: flex;
+    justify-content:center;
+    background-color: rgb(97, 128, 184);
+    box-shadow: 15px 14px 16px rgb(115, 71, 133);
+    padding: 20px;
+    height:3vh;
+    align-items: center;
+    gap: 10px;
+}
+
+body{
+    background-color: rgb(212, 212, 140);
+}

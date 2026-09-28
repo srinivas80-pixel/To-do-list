@@ -1,0 +1,68 @@
+#cal{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: rgb(141, 231, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#dream{
+    display: flex;
+    justify-content: center;
+    
+}
+.blank{
+    background-color: rgb(187, 144, 91);
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    width: 40vw;
+    border-radius:15px ;
+    box-shadow: 15px 15px 15px black;
+}
+.empty{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: 15px;
+    height:2vh;
+}
+#g{
+    width: 39vw;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 20px;
+}
+
+#j{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#allclear{
+    cursor: pointer;
+    border-color: darkgray;
+}
+
+#equal{
+    cursor: pointer;
+    border-color: darkgray;
+}
+.empty{
+    border-color: darkgray;
+}
+#clear{
+    border-color: darkgrey;
+    cursor: pointer;
+} 

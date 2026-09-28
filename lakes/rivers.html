@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ganga</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="links">
+            <a href="#">home</a>
+            <a href="#">carrer</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </div>
+        <button id="button" type="submit">login</button>
+    </div>
+    <form action="" method="post">
+        <div class="body-content">
+            <div class="image-content">
+                <img   id="mountains" src="https://tse1.mm.bing.net/th/id/OIP.qvosaBZ6VPZzt64FAEaxzAHaFM?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+            </div>
+
+            <div class="form-page">
+                <div class="form">
+                    <div class="form-content">
+                        <h2 id="h1">REGISTER-FORM</h2>
+                        <label>FirstName</label>
+                        <input type="text" required placeholder="enter your name" name="first_name">
+                        <label>Lastname</label>
+                        <input type="text" required placeholder="enter your Lastname" name="last_name">
+                        <label>Email</label>
+                        <input type="mail" required placeholder="enter your mail">
+                        <label>password</label>
+                        <input type="password" required placeholder="enter your password">
+                        <label>confirm password</label>
+                        <input type="confirm password" required placeholder="confirm password">
+
+                        <button id="btn" type="submit">register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>

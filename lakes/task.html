@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    {% load static %}
+    <link rel="stylesheet" href="static/task.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="links">
+            <b>Reminders</b>
+            
+        </div>
+        <button id="btn" type="submit">login</button>
+
+    </div>
+    <div class="post">
+        {% csrf_token %}
+        <div class="project">
+            <div class="todo">
+                <input type="text" placeholder="Task name" name="task_name" id="task">
+                <input type="date" name="due_date" required id="duedate">
+                <button type="submit" id="add">+addtask</button>
+            </div>
+        </div>
+    </div>
+    <div class="action">
+         <label>ID</label>
+        <label>TASK NAME</label>
+        <label>DUE DATE</label>
+        <label>ACTION</label>
+    </div>
+    {% for task in tasks %}
+    <div class="names">
+        <div class="check">
+            {{task.id}}
+        </div>
+        <div class="unique" id="method">
+           {{task.task_name}}
+            <div class="design" id="margin">
+                {{task.due_date}}
+               
+            </div>
+        </div>
+        <div class="buttons">
+            {% if task.is_completed %}
+            <button type="submit" id="new" onclick="mark_completed('{{task.id}}')">Mark inComplete</button>
+            {% else %}
+            <button type="submit" id="new" onclick="mark_completed('{{task.id}}')">mark as completed</button>
+            {% endif %}
+            <button type="submit" id="btn-id" onclick="is_delete('{{task.id}}')">Delete</button>
+        </div>
+    </div>
+
+    {% endfor %}
+</body>
+<script src="{% static 'well.js' %}"></script>
+
+</html>
